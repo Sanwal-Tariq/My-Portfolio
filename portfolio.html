@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanwal Tariq — MERN Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Sanwal Tariq, a MERN Full Stack Web Developer." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="noise-overlay"></div>
+
+    <!-- Custom cursor dot -->
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <header class="nav-wrap">
+        <nav class="nav">
+            <a href="#home" class="logo">S.T<span class="logo-dot">_</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-idx="01">Home</a></li>
+                <li><a href="#about" data-idx="02">About</a></li>
+                <li><a href="#education" data-idx="03">Education</a></li>
+                <li><a href="#skills" data-idx="04">Skills</a></li>
+                <li><a href="#projects" data-idx="05">Projects</a></li>
+                <li><a href="#resume" data-idx="06">Resume</a></li>
+                <li><a href="#contact" data-idx="07">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-grid">
+                <div class="hero-tag reveal">
+                    <span class="tag-line"></span>
+                    <p>MERN STACK DEVELOPER — HASILPUR, PK</p>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="line reveal"><span class="line-inner">Sanwal</span></span>
+                    <span class="line reveal"><span class="line-inner">Tariq<span
+                                class="hero-accent">.</span></span></span>
+                </h1>
+
+                <p class="hero-sub reveal">
+                    I build full‑stack web experiences with the
+                    <span class="highlight">MERN</span> stack — clean interfaces on the
+                    front, solid logic on the back.
+                </p>
+
+                <div class="hero-actions reveal">
+                    <a href="#projects" class="btn btn-primary">View Work <span class="btn-arrow">→</span></a>
+                    <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+                </div>
+
+                <div class="hero-socials reveal">
+                    <a href="https://github.com/Sanwal-Tariq" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sanwal-tariq-004a3840a" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:sanwaltariq9@gmail.com">Email</a>
+                </div>
+            </div>
+
+            <div class="hero-marquee">
+                <div class="marquee-track">
+                    <span>REACT JS</span><span>•</span><span>NODE JS</span><span>•</span>
+                    <span>EXPRESS JS</span><span>•</span><span>MONGODB</span><span>•</span>
+                    <span>NEXT JS</span><span>•</span><span>JAVASCRIPT</span><span>•</span>
+                    <span>REACT JS</span><span>•</span><span>NODE JS</span><span>•</span>
+                    <span>EXPRESS JS</span><span>•</span><span>MONGODB</span><span>•</span>
+                    <span>NEXT JS</span><span>•</span><span>JAVASCRIPT</span><span>•</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about section">
+            <div class="section-head">
+                <span class="section-num">01</span>
+                <h2>About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>
+                        I'm <strong>Sanwal Tariq</strong>, a fresher MERN Full Stack Web
+                        Developer from Bahawalpur, Pakistan. I'm currently in the final
+                        semester of my Bachelor's degree in Computer Science, and I spend
+                        most of my time turning ideas into working web applications —
+                        from the database schema all the way up to the pixels on screen.
+                    </p>
+                    <p>
+                        I enjoy the full loop of building software: designing a clean UI
+                        with React, wiring up REST APIs with Node and Express, and
+                        modelling data in MongoDB. I'm actively looking for opportunities
+                        to apply and grow these skills on real-world projects.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-row"><span>Based in</span><strong>Bahawalpur, Pakistan</strong></div>
+                    <div class="about-card-row"><span>Focus</span><strong>MERN Stack Development</strong></div>
+                    <div class="about-card-row"><span>Status</span><strong>Fresher — Open to Work</strong></div>
+                    <div class="about-card-row"><span>Studying</span><strong>BSCS, Final Semester</strong></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="education section">
+            <div class="section-head">
+                <span class="section-num">02</span>
+                <h2>Education</h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2019 — Present</span>
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p class="timeline-place">The Islamia University of Bahawalpur</p>
+                        <p class="timeline-desc">Currently in the 8th and final semester, building a strong foundation
+                            in programming, data structures, databases, and modern web development.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023</span>
+                        <h3>Associate Degree Program (ADP)</h3>
+                        <p class="timeline-place">The Islamia University of Bahawalpur</p>
+                        <p class="timeline-desc">Completed the ADP, laying the groundwork before continuing into the
+                            BSCS program.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2021</span>
+                        <h3>Intermediate</h3>
+                        <p class="timeline-place">BISE Bahawalpur</p>
+                        <p class="timeline-desc">Completed intermediate education under the Bahawalpur Board of
+                            Intermediate and Secondary Education.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2019</span>
+                        <h3>Matriculation</h3>
+                        <p class="timeline-place">BISE Bahawalpur</p>
+                        <p class="timeline-desc">Completed matriculation under the Bahawalpur Board of Intermediate and
+                            Secondary Education.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="skills section">
+            <div class="section-head">
+                <span class="section-num">03</span>
+                <h2>Skills</h2>
+            </div>
+
+            <div class="skills-columns">
+                <div class="skill-group reveal">
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li><span>HTML5</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--level:92%"></div>
+                            </div>
+                        </li>
+                        <li><span>CSS3</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--level:90%"></div>
+                            </div>
+                        </li>
+                        <li><span>JavaScript</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--level:85%"></div>
+                            </div>
+                        </li>
+                        <li><span>React JS</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--level:82%"></div>
+                            </div>
+                        </li>
+                        <li><span>Next JS</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--level:70%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3>Backend &amp; Database</h3>
+                    <ul class="skill-list">
+                        <li><span>Node JS</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--level:80%"></div>
+                            </div>
+                        </li>
+                        <li><span>Express JS</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--level:78%"></div>
+                            </div>
+                        </li>
+                        <li><span>MongoDB</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--level:75%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3>Tools</h3>
+                    <ul class="skill-list">
+                        <li><span>Git</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--level:85%"></div>
+                            </div>
+                        </li>
+                        <li><span>GitHub</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--level:85%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects section">
+            <div class="section-head">
+                <span class="section-num">04</span>
+                <h2>Projects</h2>
+            </div>
+
+            <div class="project-list">
+
+                <a class="project-item reveal" href="https://github.com/Sanwal-Tariq" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="project-index">01</div>
+                    <div class="project-body">
+                        <h3>Taskify</h3>
+                        <p>A full working task-management application built end-to-end with React on the frontend, and
+                            Node/Express with MongoDB powering the backend and database.</p>
+                        <div class="project-tags">
+                            <span>React JS</span><span>Node JS</span><span>Express JS</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="project-link">View Repo <span class="btn-arrow">→</span></div>
+                </a>
+
+                <a class="project-item reveal" href="https://github.com/Sanwal-Tariq" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="project-index">02</div>
+                    <div class="project-body">
+                        <h3>Confer Hospital Website</h3>
+                        <p>A responsive hospital website frontend focused on clear information architecture and an
+                            easy-to-navigate patient experience.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-link">View Repo <span class="btn-arrow">→</span></div>
+                </a>
+
+                <a class="project-item reveal" href="https://github.com/Sanwal-Tariq" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="project-index">03</div>
+                    <div class="project-body">
+                        <h3>Student Registration Form</h3>
+                        <p>A structured, validated student registration form built with clean semantic HTML and
+                            interactive form handling in JavaScript.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-link">View Repo <span class="btn-arrow">→</span></div>
+                </a>
+
+                <a class="project-item reveal" href="https://github.com/Sanwal-Tariq" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="project-index">04</div>
+                    <div class="project-body">
+                        <h3>Hamlet Website</h3>
+                        <p>A themed, content-driven website exploring layout and typography while keeping the interface
+                            fully responsive.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-link">View Repo <span class="btn-arrow">→</span></div>
+                </a>
+
+                <a class="project-item reveal" href="https://github.com/Sanwal-Tariq" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="project-index">05</div>
+                    <div class="project-body">
+                        <h3>Industrial Training Kits</h3>
+                        <p>A collection of interactive training materials designed for industrial applications,
+                            featuring engaging content and intuitive navigation.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-link">View Repo <span class="btn-arrow">→</span></div>
+                </a>
+
+                 <a class="project-item reveal" href="https://github.com/Sanwal-Tariq" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="project-index">06</div>
+                    <div class="project-body">
+                        <h3>DecodeLabs-Responsive-Architecture</h3>
+                        <p>A modern, fully responsive frontend web project built with clean HTML5, CSS3, and JavaScript, featuring structured layouts and optimized user experience."</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-link">View Repo <span class="btn-arrow">→</span></div>
+                </a>
+
+                <a class="project-item reveal" href="https://github.com/Sanwal-Tariq" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="project-index">07</div>
+                    <div class="project-body">
+                        <h3>DecodeLabs-Project3</h3>
+                        <p>A modern and responsive frontend web project built using HTML, CSS, and JavaScript. It features a clean, well-structured layout combined with interactive client-side functionality to deliver a smooth user experience.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-link">View Repo <span class="btn-arrow">→</span></div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- RESUME -->
+        <section id="resume" class="resume section">
+            <div class="section-head">
+                <span class="section-num">05</span>
+                <h2>Resume</h2>
+            </div>
+            <div class="resume-box reveal">
+                <div class="resume-copy">
+                    <h3>Download my resume</h3>
+                    <p>Get the full picture of my education, skills, and project experience in a single PDF.</p>
+                </div>
+                <a class="btn btn-primary" href="/Sanwal_Tariq_FSWD.pdf" download>
+                    Download Resume <span class="btn-arrow">↓</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact section">
+            <div class="section-head">
+                <span class="section-num">06</span>
+                <h2>Contact</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-intro reveal">
+                    <h3>Let's build something together.</h3>
+                    <p>I'm currently open to internships, entry-level roles, and freelance MERN projects. Reach out — I
+                        usually reply within a day.</p>
+                </div>
+
+                <ul class="contact-list reveal">
+                    <li>
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+923022269628">+92 302 2269628</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:sanwaltariq9@gmail.com">sanwaltariq9@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">GitHub</span>
+                        <a href="https://github.com/Sanwal-Tariq" target="_blank"
+                            rel="noopener noreferrer">github.com/Sanwal-Tariq</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/sanwal-tariq-004a3840a" target="_blank"
+                            rel="noopener noreferrer">linkedin.com/in/sanwal-tariq</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Sanwal Tariq. Built with HTML, CSS &amp; JavaScript.</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
