@@ -615,6 +615,12 @@ img {
     line-height: 1.2;
 }
 
+.certificate-copy .certificate-provider {
+    margin-top: 10px;
+    color: var(--accent-soft);
+    font-size: 0.82rem;
+}
+
 .certificate-copy p {
     max-width: 380px;
     margin-top: 14px;
