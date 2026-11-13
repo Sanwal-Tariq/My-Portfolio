@@ -711,17 +711,38 @@ img {
 /* ===== Certificates ===== */
 .certificate-card {
     display: flex;
-    align-items: center;
-    padding: 36px;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.certificate-copy {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 0 24px;
+    padding: 30px 32px;
     background: var(--card);
     border: 1px solid var(--line);
     border-radius: 4px;
     transition: border-color 0.35s var(--ease), transform 0.35s var(--ease);
 }
 
-.certificate-card:hover {
+.certificate-copy:hover {
     border-color: var(--line-strong);
     transform: translateY(-4px);
+}
+
+.certificate-number {
+    grid-column: 1;
+    grid-row: 1;
+    color: var(--accent-soft);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.certificate-details {
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .certificate-label {
@@ -731,20 +752,20 @@ img {
     text-transform: uppercase;
 }
 
-.certificate-copy h3 {
+.certificate-details h3 {
     margin-top: 12px;
     font-family: var(--font-display);
     font-size: clamp(1.6rem, 3vw, 2.3rem);
     line-height: 1.2;
 }
 
-.certificate-copy .certificate-provider {
+.certificate-details .certificate-provider {
     margin-top: 10px;
     color: var(--accent-soft);
     font-size: 0.82rem;
 }
 
-.certificate-copy p {
+.certificate-details p {
     max-width: 380px;
     margin-top: 14px;
     color: var(--ink-dim);
@@ -1035,7 +1056,9 @@ img {
         align-items: flex-start;
     }
 
-    .certificate-card {
+    .certificate-copy {
+        grid-template-columns: 40px minmax(0, 1fr);
+        gap: 0 16px;
         padding: 24px;
     }
 }
